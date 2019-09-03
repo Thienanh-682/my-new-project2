@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+
+</head>
+<body>
+<p id="a">Test câu lệnh switch-case</p>
+<input type="text" id="nhap"/>
+<button onclick="thongbao()">Xuất Thông Báo</button>
+ <script>
+     function thongbao() {
+         var laytestnhap=document.getElementById('nhap').value;
+         switch (laytestnhap) {
+             case 'buổi sáng': alert('Chào buổi sáng thiên anh');break;
+             case 'buổi chiều': alert('Chào buổi chiều thiên anh');break;
+             default:alert('Chào buổi tối thiên anh')
+         }
+         
+     }
+ </script>
+</body>
+</html>
