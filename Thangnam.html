@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thang.nam</title>
+</head>
+<body>
+ <input type="text" id="month">
+<button type="button" onclick="DayOfMonth()">Tính Số Ngày</button>
+<br>
+<p id="demo"></p>
+<script>
+    function DayOfMonth() {
+        let month=+(document.getElementById('month').value);
+        if (month>=1 && month<=12) {
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                document.getElementById('demo').innerText="Tháng" +month+ " Có 31 Ngày ";break;
+                case 2:
+                 document.getElementById('demo').innerText="Tháng" +month+ " Có 28 hoặc 29 Ngày";break;
+                default :
+                 document.getElementById('demo').innerText="Tháng" +month+ " Có 30 Ngày";break;
+            }
+        }
+        else {
+            document.getElementById('demo').innerText="Nhập Sai tháng";
+        }
+    }
+</script>
+</body>
+</html>
