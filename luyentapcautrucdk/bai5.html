@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseFloat(prompt("Nhập Điểm kiểm tra"));
+    let b=parseFloat(prompt("Nhập Điểm thi Giữa kì"));
+    let c =parseFloat(prompt("Nhập Điểm Thi Cuối Kì "));
+    let d = (a+(b*2)+(c*3))/6;
+    if (d<5) {
+        alert("Học Lực Trung Bình");
+    } else if (d>=5 && d<=8) {
+        alert("Học Lực Loại Khá");
+    } else {
+        alert("Học Lực Loại Giỏi");
+    }
+</script>
+</body>
+</html>
